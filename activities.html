@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed-variant": "#5d4201",
+                    "surface-bright": "#faf9f7",
+                    "primary-fixed": "#d4e3ff",
+                    "on-tertiary-container": "#af8c47",
+                    "primary-container": "#1a2b42",
+                    "on-tertiary": "#ffffff",
+                    "secondary-fixed": "#cee9d6",
+                    "surface-container-high": "#e9e8e6",
+                    "secondary-container": "#cbe6d4",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-fixed": "#082014",
+                    "inverse-primary": "#b6c7e5",
+                    "on-primary-container": "#8292ae",
+                    "on-secondary": "#ffffff",
+                    "inverse-surface": "#2f3130",
+                    "secondary-fixed-dim": "#b2cdbb",
+                    "on-error": "#ffffff",
+                    "surface-tint": "#4f5f79",
+                    "tertiary-container": "#392700",
+                    "on-primary-fixed": "#0a1c32",
+                    "on-error-container": "#93000a",
+                    "on-secondary-container": "#506859",
+                    "surface-variant": "#e3e2e0",
+                    "tertiary-fixed": "#ffdea5",
+                    "on-surface": "#1a1c1b",
+                    "on-primary": "#ffffff",
+                    "outline": "#74777e",
+                    "primary": "#04162c",
+                    "surface-container": "#efeeec",
+                    "tertiary-fixed-dim": "#e9c176",
+                    "tertiary": "#1f1400",
+                    "surface-container-highest": "#e3e2e0",
+                    "inverse-on-surface": "#f1f1ef",
+                    "error-container": "#ffdad6",
+                    "surface-container-low": "#f4f3f1",
+                    "primary-fixed-dim": "#b6c7e5",
+                    "on-background": "#1a1c1b",
+                    "on-secondary-fixed-variant": "#344c3e",
+                    "outline-variant": "#c4c6cd",
+                    "surface-dim": "#dadad8",
+                    "error": "#ba1a1a",
+                    "background": "#faf9f7",
+                    "on-primary-fixed-variant": "#374860",
+                    "secondary": "#4c6455",
+                    "on-tertiary-fixed": "#261900",
+                    "surface": "#faf9f7",
+                    "on-surface-variant": "#44474d"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "stack-md": "24px",
+                    "margin-page": "64px",
+                    "gutter": "32px",
+                    "stack-lg": "48px",
+                    "unit": "8px",
+                    "container-max": "1280px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Newsreader"],
+                    "headline-lg": ["Newsreader"],
+                    "body-md": ["Manrope"],
+                    "body-lg": ["Manrope"],
+                    "label-md": ["Manrope"],
+                    "display-xl": ["Newsreader"]
+            },
+            "fontSize": {
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "400"}],
+                    "headline-lg": ["40px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "display-xl": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "500"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 24px;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md">
+<!-- TopNavBar -->
+<nav class="sticky top-0 z-50 bg-white/90 dark:bg-slate-950/90 backdrop-blur-md border-b border-[#E5EBE6] dark:border-slate-800 shadow-sm shadow-[#1A2B42]/05">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<a class="font-serif text-2xl font-bold text-[#1A2B42] dark:text-slate-50" href="REEE.html">REEE</a>
+<div class="hidden md:flex items-center space-x-8 font-serif font-medium tracking-tight">
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#1A2B42] transition-colors" href="index.html">Mission</a>
+<a class="text-[#1A2B42] dark:text-white border-b-2 border-[#1A2B42] pb-1 font-semibold" href="activities.html">Activities</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#1A2B42] transition-colors" href="research.html">Resources</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#1A2B42] transition-colors" href="membership.html">Membership</a>
+</div>
+<button class="bg-primary text-white px-6 py-2 font-label-md rounded-lg hover:opacity-90 transition-all">
+                Join Network
+            </button>
+</div>
+</nav>
+<main class="max-w-7xl mx-auto px-8 py-stack-lg">
+<!-- Header -->
+<header class="mb-stack-lg max-w-3xl">
+<h1 class="font-display-xl text-display-xl text-primary mb-4 italic">Activities &amp; Resources</h1>
+<p class="font-body-lg text-body-lg text-secondary">
+                A comprehensive platform for the promotion and dissemination of <span class="font-semibold">Emotional Education</span> across Europe. Explore our academic calendar and access cutting-edge scientific resources.
+            </p>
+</header>
+<!-- Academic Calendar 2026 Section -->
+<section class="mb-20">
+<div class="flex items-center justify-between mb-8">
+<h2 class="font-headline-lg text-headline-lg text-primary">Academic Calendar 2026</h2>
+<span class="font-label-md text-label-md bg-secondary-fixed text-on-secondary-fixed px-4 py-1 rounded-full uppercase tracking-widest">Annual Planning</span>
+</div>
+<div class="calendar-grid">
+<!-- Jan -->
+<div class="bg-white border border-[#E5EBE6] p-6 rounded-lg transition-all hover:shadow-lg hover:shadow-primary/05 group">
+<div class="flex justify-between items-start mb-4">
+<span class="font-headline-md text-headline-md text-on-primary-container">01</span>
+<span class="text-secondary opacity-40 font-label-md uppercase">January</span>
+</div>
+<h3 class="font-headline-md text-2xl text-primary mb-2">Opening</h3>
+<p class="text-on-surface-variant text-sm">Initial meetings of the European Emotional Education Network.</p>
+</div>
+<!-- Feb -->
+<div class="bg-white border border-[#E5EBE6] p-6 rounded-lg transition-all hover:shadow-lg hover:shadow-primary/05">
+<div class="flex justify-between items-start mb-4">
+<span class="font-headline-md text-headline-md text-on-primary-container">02</span>
+<span class="text-secondary opacity-40 font-label-md uppercase">February</span>
+</div>
+<h3 class="font-headline-md text-2xl text-primary mb-2">Commencement</h3>
+<p class="text-on-surface-variant text-sm">Start of the European Emotional Education Network project phases.</p>
+</div>
+<!-- Mar -->
+<div class="bg-primary-container p-6 rounded-lg transition-all shadow-md">
+<div class="flex justify-between items-start mb-4">
+<span class="font-headline-md text-headline-md text-primary-fixed">03</span>
+<span class="text-primary-fixed-dim opacity-60 font-label-md uppercase">March</span>
+</div>
+<h3 class="font-headline-md text-2xl text-white mb-2">Project Development</h3>
+<p class="text-on-primary-container text-sm">Core development cycle for the European Emotional Education Network.</p>
+</div>
+<!-- Apr -->
+<div class="bg-white border border-[#E5EBE6] p-6 rounded-lg transition-all hover:shadow-lg hover:shadow-primary/05">
+<div class="flex justify-between items-start mb-4">
+<span class="font-headline-md text-headline-md text-on-primary-container">04</span>
+<span class="text-secondary opacity-40 font-label-md uppercase">April</span>
+</div>
+<h3 class="font-headline-md text-2xl text-primary mb-2">Project Progress</h3>
+<p class="text-on-surface-variant text-sm">Milestone reviews for the European Emotional Education Network.</p>
+</div>
+<!-- May -->
+<div class="bg-white border border-[#E5EBE6] p-6 rounded-lg transition-all hover:shadow-lg hover:shadow-primary/05">
+<div class="flex justify-between items-start mb-4">
+<span class="font-headline-md text-headline-md text-on-primary-container">05</span>
+<span class="text-secondary opacity-40 font-label-md uppercase">May</span>
+</div>
+<h3 class="font-headline-md text-2xl text-primary mb-2">Presentation</h3>
+<p class="text-on-surface-variant text-sm">Official presentation of the European Emotional Education Network project.</p>
+</div>
+<!-- Jun -->
+<div class="bg-white border border-[#E5EBE6] p-6 rounded-lg transition-all hover:shadow-lg hover:shadow-primary/05">
+<div class="flex justify-between items-start mb-4">
+<span class="font-headline-md text-headline-md text-on-primary-container">06</span>
+<span class="text-secondary opacity-40 font-label-md uppercase">June</span>
+</div>
+<h3 class="font-headline-md text-2xl text-primary mb-2">Initial Meeting</h3>
+<p class="text-on-surface-variant text-sm">Inaugural general assembly of the European Emotional Education Network.</p>
+</div>
+<!-- JULY -->
+<div class="bg-surface-container-low border border-[#E5EBE6] p-6 rounded-lg border-dashed">
+<div class="flex justify-between items-start mb-4">
+<span class="font-headline-md text-headline-md text-outline">07</span>
+<span class="text-secondary opacity-40 font-label-md uppercase">July</span>
+</div>
+<h3 class="font-headline-md text-2xl text-secondary mb-2">Summer Break</h3>
+<p class="text-on-surface-variant text-sm italic">Period for rest and academic reflection.</p>
+</div>
+<!-- AGOSTO -->
+<div class="bg-surface-container-low border border-[#E5EBE6] p-6 rounded-lg border-dashed">
+<div class="flex justify-between items-start mb-4">
+<span class="font-headline-md text-headline-md text-outline">08</span>
+<span class="text-secondary opacity-40 font-label-md uppercase">August</span>
+</div>
+<h3 class="font-headline-md text-2xl text-secondary mb-2">Sabbatical Period</h3>
+<p class="text-on-surface-variant text-sm italic">Period for rest and academic reflection.</p>
+</div>
+<!-- Sep -->
+<div class="bg-white border border-[#E5EBE6] p-6 rounded-lg transition-all hover:shadow-lg hover:shadow-primary/05">
+<div class="flex justify-between items-start mb-4">
+<span class="font-headline-md text-headline-md text-on-primary-container">09</span>
+<span class="text-secondary opacity-40 font-label-md uppercase">September</span>
+</div>
+<h3 class="font-headline-md text-2xl text-primary mb-2">Symposium</h3>
+<p class="text-on-surface-variant text-sm">Debating the future of emotional education.</p>
+</div>
+<!-- Oct -->
+<div class="bg-white border border-[#E5EBE6] p-6 rounded-lg transition-all hover:shadow-lg hover:shadow-primary/05">
+<div class="flex justify-between items-start mb-4">
+<span class="font-headline-md text-headline-md text-on-primary-container">10</span>
+<span class="text-secondary opacity-40 font-label-md uppercase">October</span>
+</div>
+<h3 class="font-headline-md text-2xl text-primary mb-2">Webinar</h3>
+<p class="text-on-surface-variant text-sm">Focus on conflict resolution through Emotional Education.</p>
+</div>
+<!-- Nov -->
+<div class="bg-white border border-[#E5EBE6] p-6 rounded-lg transition-all hover:shadow-lg hover:shadow-primary/05">
+<div class="flex justify-between items-start mb-4">
+<span class="font-headline-md text-headline-md text-on-primary-container">11</span>
+<span class="text-secondary opacity-40 font-label-md uppercase">November</span>
+</div>
+<h3 class="font-headline-md text-2xl text-primary mb-2">Research Days</h3>
+<p class="text-on-surface-variant text-sm">Presentation of theses and recent scientific breakthroughs.</p>
+</div>
+<!-- Dec -->
+<div class="bg-tertiary-fixed border border-[#E5EBE6] p-6 rounded-lg transition-all">
+<div class="flex justify-between items-start mb-4">
+<span class="font-headline-md text-headline-md text-tertiary-container">12</span>
+<span class="text-on-tertiary-fixed-variant opacity-60 font-label-md uppercase">December</span>
+</div>
+<h3 class="font-headline-md text-2xl text-tertiary mb-2">Evaluation</h3>
+<p class="text-on-tertiary-fixed-variant text-sm font-medium">Annual performance evaluation</p>
+</div>
+</div>
+</section>
+<!-- Resource Bank Section (Bento Layout) -->
+<section class="py-16">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+<div class="max-w-2xl">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Resource Bank</h2>
+<p class="font-body-md text-body-md text-secondary">Exclusive access to our repository of specialized knowledge in Emotional Education.</p>
+</div>
+<button class="mt-6 md:mt-0 flex items-center text-primary font-label-md border-b-2 border-tertiary-fixed pb-1 hover:border-primary transition-all">
+                    View full repository <span class="material-symbols-outlined ml-2">arrow_forward</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Featured Resource -->
+<div class="md:col-span-2 relative group overflow-hidden rounded-lg bg-primary-container aspect-[16/9]">
+<img alt="Library" class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-700" data-alt="A serene scholarly library scene with a large open book resting on a dark wood table. The background is softly blurred showing shelves of academic journals in a prestigious institutional setting. The lighting is warm and intellectual, casting soft shadows that emphasize the texture of the aged paper. The overall aesthetic is one of deep focus and academic rigor, using a palette of deep navy and muted sage." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBe0UzFHjzWkYatgpWf6PB52vb95HUshm4A1-KTXMOxKAv9hpd5UUMLjWvd8mb4quHUjveA2tQ-29wtts3yOG895e1rnZyykZ4IiT2VZlUBJuV7BMOT_NnroRvdA8Sx8DwRjrRuLQ2f1xu-mVdTAeTVttaEnNNJFl_6sEOsOYUnI0K9tWZZZjnS8MHOzbCMsV7z20XPEo6ImwMpOPWvzUMVUsZMfEReNheW5E8Rdjy_6PkOwH4NsMRO6XLo8bybKoP1sISTuyF-yO5S"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container via-primary-container/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed px-3 py-1 text-xs font-label-md rounded-full mb-4 inline-block">FEATURED RESOURCE</span>
+<h3 class="font-headline-lg text-white mb-2">Master Guide: Implementing Emotional Education in the Classroom</h3>
+<p class="text-primary-fixed-dim max-w-lg">A comprehensive theoretical-practical framework for secondary and high school teachers.</p>
+<button class="mt-6 flex items-center bg-white text-primary px-6 py-3 rounded-lg font-label-md hover:bg-surface-bright transition-colors">
+<span class="material-symbols-outlined mr-2">download</span> Download PDF (12MB)
+                        </button>
+</div>
+</div>
+<!-- Side Cards -->
+<div class="space-y-8">
+<div class="bg-white border border-[#E5EBE6] p-6 rounded-lg hover:shadow-md transition-shadow">
+<div class="flex items-center text-primary mb-4">
+<span class="material-symbols-outlined text-3xl">description</span>
+<span class="ml-2 font-label-md text-secondary">WHITE PAPER</span>
+</div>
+<h4 class="font-headline-md text-xl text-primary mb-2">Neuroscience and Emotional Education</h4>
+<p class="text-on-surface-variant text-sm mb-4">Detailed study on brain plasticity in childhood affective development.</p>
+<a class="text-primary font-semibold text-sm hover:underline" href="research.html">Read document</a>
+</div>
+<div class="bg-white border border-[#E5EBE6] p-6 rounded-lg hover:shadow-md transition-shadow">
+<div class="flex items-center text-primary mb-4">
+<span class="material-symbols-outlined text-3xl">play_circle</span>
+<span class="ml-2 font-label-md text-secondary">WEBINAR</span>
+</div>
+<h4 class="font-headline-md text-xl text-primary mb-2">School Resilience Workshop</h4>
+<p class="text-on-surface-variant text-sm mb-4">Recording of the practical session with educational psychology experts.</p>
+<a class="text-primary font-semibold text-sm hover:underline" href="research.html">Access video</a>
+</div>
+</div>
+</div>
+<!-- More resources row -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6 mt-8">
+<div class="bg-secondary-container/20 p-6 border border-secondary-container rounded-lg group cursor-pointer hover:bg-secondary-container/40 transition-colors">
+<span class="material-symbols-outlined text-secondary mb-2">article</span>
+<h5 class="font-headline-md text-lg text-primary">Classroom Protocols</h5>
+<p class="text-on-secondary-container text-xs mt-1">Step-by-step guides for emotional crisis management.</p>
+</div>
+<div class="bg-secondary-container/20 p-6 border border-secondary-container rounded-lg group cursor-pointer hover:bg-secondary-container/40 transition-colors">
+<span class="material-symbols-outlined text-secondary mb-2">analytics</span>
+<h5 class="font-headline-md text-lg text-primary">Evaluation Matrices</h5>
+<p class="text-on-secondary-container text-xs mt-1">Metric tools for progress in Emotional Education.</p>
+</div>
+<div class="bg-secondary-container/20 p-6 border border-secondary-container rounded-lg group cursor-pointer hover:bg-secondary-container/40 transition-colors">
+<span class="material-symbols-outlined text-secondary mb-2">contact_page</span>
+<h5 class="font-headline-md text-lg text-primary">Academic Directory</h5>
+<p class="text-on-secondary-container text-xs mt-1">Contact information for lead researchers in the network.</p>
+</div>
+<div class="bg-secondary-container/20 p-6 border border-secondary-container rounded-lg group cursor-pointer hover:bg-secondary-container/40 transition-colors">
+<span class="material-symbols-outlined text-secondary mb-2">menu_book</span>
+<h5 class="font-headline-md text-lg text-primary">Recommended Bibliography</h5>
+<p class="text-on-secondary-container text-xs mt-1">Curated selection of fundamental Emotional Education texts.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#E5EBE6] dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-8 py-12 max-w-7xl mx-auto">
+<div class="mb-8 md:mb-0 text-center md:text-left">
+<div class="font-serif text-lg font-bold text-[#1A2B42] dark:text-slate-100 mb-2">REEE</div>
+<p class="font-sans text-sm tracking-wide text-slate-500 dark:text-slate-400 max-w-xs">
+                    © 2026 European Emotional Education Network (REEE). Committed to Emotional Education.
+                </p>
+</div>
+<div class="flex flex-wrap justify-center gap-8 font-sans text-sm tracking-wide">
+<a class="text-slate-500 dark:text-slate-400 hover:underline hover:text-[#1A2B42] dark:hover:text-white transition-all" href="membership.html">Contact</a>
+<a class="text-slate-500 dark:text-slate-400 hover:underline hover:text-[#1A2B42] dark:hover:text-white transition-all" href="index.html">Privacy Policy</a>
+<a class="text-slate-500 dark:text-slate-400 hover:underline hover:text-[#1A2B42] dark:hover:text-white transition-all" href="index.html">Legal Notice</a>
+<a class="text-slate-500 dark:text-slate-400 hover:underline hover:text-[#1A2B42] dark:hover:text-white transition-all" href="index.html">Terms of Service</a>
+</div>
+</div>
+</footer>
+</body></html>

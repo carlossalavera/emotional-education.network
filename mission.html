@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&amp;family=Manrope:wght@200..800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed-variant": "#5d4201",
+                    "surface-bright": "#faf9f7",
+                    "primary-fixed": "#d4e3ff",
+                    "on-tertiary-container": "#af8c47",
+                    "primary-container": "#1a2b42",
+                    "on-tertiary": "#ffffff",
+                    "secondary-fixed": "#cee9d6",
+                    "surface-container-high": "#e9e8e6",
+                    "secondary-container": "#cbe6d4",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-fixed": "#082014",
+                    "inverse-primary": "#b6c7e5",
+                    "on-primary-container": "#8292ae",
+                    "on-secondary": "#ffffff",
+                    "inverse-surface": "#2f3130",
+                    "secondary-fixed-dim": "#b2cdbb",
+                    "on-error": "#ffffff",
+                    "surface-tint": "#4f5f79",
+                    "tertiary-container": "#392700",
+                    "on-primary-fixed": "#0a1c32",
+                    "on-error-container": "#93000a",
+                    "on-secondary-container": "#506859",
+                    "surface-variant": "#e3e2e0",
+                    "tertiary-fixed": "#ffdea5",
+                    "on-surface": "#1a1c1b",
+                    "on-primary": "#ffffff",
+                    "outline": "#74777e",
+                    "primary": "#04162c",
+                    "surface-container": "#efeeec",
+                    "tertiary-fixed-dim": "#e9c176",
+                    "tertiary": "#1f1400",
+                    "surface-container-highest": "#e3e2e0",
+                    "inverse-on-surface": "#f1f1ef",
+                    "error-container": "#ffdad6",
+                    "surface-container-low": "#f4f3f1",
+                    "primary-fixed-dim": "#b6c7e5",
+                    "on-background": "#1a1c1b",
+                    "on-secondary-fixed-variant": "#344c3e",
+                    "outline-variant": "#c4c6cd",
+                    "surface-dim": "#dadad8",
+                    "error": "#ba1a1a",
+                    "background": "#faf9f7",
+                    "on-primary-fixed-variant": "#374860",
+                    "secondary": "#4c6455",
+                    "on-tertiary-fixed": "#261900",
+                    "surface": "#faf9f7",
+                    "on-surface-variant": "#44474d"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "stack-md": "24px",
+                    "margin-page": "64px",
+                    "gutter": "32px",
+                    "stack-lg": "48px",
+                    "unit": "8px",
+                    "container-max": "1280px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Newsreader"],
+                    "headline-lg": ["Newsreader"],
+                    "body-md": ["Manrope"],
+                    "body-lg": ["Manrope"],
+                    "label-md": ["Manrope"],
+                    "display-xl": ["Newsreader"]
+            },
+            "fontSize": {
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "400"}],
+                    "headline-lg": ["40px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "display-xl": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "500"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+        body {
+            background-color: #faf9f7;
+            color: #1a1c1b;
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-[#E5EBE6] shadow-sm shadow-[#1A2B42]/05">
+<nav class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<div class="font-headline-lg text-2xl font-bold text-[#1A2B42]">REEE</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="font-body-md text-[#1A2B42] border-b-2 border-[#1A2B42] pb-1 font-semibold" href="index.html">Mission</a>
+<a class="font-body-md text-slate-600 hover:text-[#1A2B42] transition-colors" href="activities.html">Activities</a>
+<a class="font-body-md text-slate-600 hover:text-[#1A2B42] transition-colors" href="resources.html">Resources</a>
+<a class="font-body-md text-slate-600 hover:text-[#1A2B42] transition-colors" href="membership.html">Membership</a>
+</div>
+<button class="bg-[#04162c] text-white px-6 py-2 rounded-lg font-label-md hover:bg-primary-container transition-all">
+            Join Network
+        </button>
+</nav>
+</header>
+<main class="pt-32 pb-stack-lg max-w-7xl mx-auto px-8">
+<!-- Form Hero Section -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center mb-stack-lg">
+<div class="lg:col-span-7">
+<h1 class="font-display-xl text-display-xl text-primary mb-stack-md">Institutional Membership Registration</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-8">
+                Join the premier network for Emotional Education. We empower institutions to lead with empathy, scientific rigor, and academic excellence in the transformative landscape of 2026.
+            </p>
+<!-- Progress Stepper -->
+<div class="flex items-center space-x-4 mb-stack-md">
+<div class="flex items-center">
+<span class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-label-md">1</span>
+<span class="ml-3 font-label-md text-primary">Identity</span>
+</div>
+<div class="w-12 h-px bg-outline-variant"></div>
+<div class="flex items-center opacity-40">
+<span class="w-10 h-10 rounded-full border-2 border-outline flex items-center justify-center font-label-md text-outline">2</span>
+<span class="ml-3 font-label-md text-on-surface-variant">Contact</span>
+</div>
+<div class="w-12 h-px bg-outline-variant"></div>
+<div class="flex items-center opacity-40">
+<span class="w-10 h-10 rounded-full border-2 border-outline flex items-center justify-center font-label-md text-outline">3</span>
+<span class="ml-3 font-label-md text-on-surface-variant">Vision</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 relative hidden lg:block">
+<div class="aspect-square rounded-xl overflow-hidden border border-[#E5EBE6] shadow-lg shadow-[#1A2B42]/04">
+<img class="w-full h-full object-cover" data-alt="A serene and minimalist academic library space featuring clean architectural lines, natural light pouring through large windows, and a palette of soft whites and muted sage greens. Professionals are seen in the distance engaged in quiet, respectful collaboration, embodying the values of emotional intelligence and scholarly excellence within a high-end educational network environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVQlBUvzLyBm_6EURK9EHFpbmY-wnyCF3hnsBL6AH0I30IlZ9E60yHmd1kwi1ZCC3mgspwPAy8meZ6RZ3mjSqJ-U6qIdgvtGNgOijTpaCUdx3-8Qahzu5AEX7giYAOU-UCCDUmAgJ1g05TlKO9wbz2Yurv1O7X6ysQLBsq6WY70fNwue9yogW4n3WSPBy3A2oKX5-DVJJRQ6tjQYq8DON2nt1kxJSchxsVWIVdyZbDsXf4KDNovMbCBiDD_e82yTplEXZKqnqXPvld"/>
+</div>
+<div class="absolute -bottom-6 -left-6 bg-secondary-container p-6 rounded-lg max-w-[240px] shadow-md border border-white">
+<span class="material-symbols-outlined text-primary text-3xl mb-2" data-icon="school">school</span>
+<p class="font-headline-md text-xl text-on-secondary-container">Academic Rigor &amp; Humanistic Warmth</p>
+</div>
+</div>
+</div>
+<!-- Form Canvas -->
+<div class="bg-white rounded-xl border border-[#E5EBE6] p-8 md:p-12 shadow-sm">
+<form class="grid grid-cols-1 md:grid-cols-2 gap-stack-md">
+<!-- Field: Institution Name -->
+<div class="col-span-full md:col-span-1 flex flex-col space-y-2">
+<label class="font-label-md text-on-surface-variant" for="institution_name">Institution Name</label>
+<input class="border-b border-outline-variant bg-transparent py-3 font-body-md focus:outline-none focus:border-tertiary-fixed-dim transition-all focus:ring-0" id="institution_name" placeholder="e.g. University of Emotional Sciences" type="text"/>
+</div>
+<!-- Field: Type -->
+<div class="col-span-full md:col-span-1 flex flex-col space-y-2">
+<label class="font-label-md text-on-surface-variant" for="institution_type">Institution Type</label>
+<select class="border-b border-outline-variant bg-transparent py-3 font-body-md focus:outline-none focus:border-tertiary-fixed-dim transition-all focus:ring-0 appearance-none" id="institution_type">
+<option disabled="" selected="" value="">Select Type</option>
+<option value="academic">Academic Institution</option>
+<option value="research">Research Center</option>
+<option value="ngo">Non-Governmental Organization</option>
+</select>
+</div>
+<!-- Field: Website -->
+<div class="col-span-full flex flex-col space-y-2">
+<label class="font-label-md text-on-surface-variant" for="website">Website / Digital Portal</label>
+<div class="flex items-center border-b border-outline-variant">
+<span class="text-on-surface-variant pr-2">https://</span>
+<input class="bg-transparent py-3 w-full font-body-md focus:outline-none focus:border-tertiary-fixed-dim transition-all focus:ring-0 border-none px-0" id="website" placeholder="www.institution.edu" type="url"/>
+</div>
+</div>
+<!-- Field: Description -->
+<div class="col-span-full flex flex-col space-y-2">
+<label class="font-label-md text-on-surface-variant" for="description">Institutional Mission Statement (Emotional Education)</label>
+<textarea class="border-b border-outline-variant bg-transparent py-3 font-body-md focus:outline-none focus:border-tertiary-fixed-dim transition-all focus:ring-0 resize-none" id="description" placeholder="Briefly describe your institution's commitment to emotional education and well-being..." rows="4"></textarea>
+</div>
+<!-- Footer of Form -->
+<div class="col-span-full flex items-center justify-between pt-stack-md border-t border-surface-variant mt-stack-md">
+<span class="text-sm text-on-surface-variant italic">Ref: REEE-APP-2026-REG</span>
+<div class="flex space-x-4">
+<button class="px-8 py-3 rounded border border-outline text-primary font-label-md hover:bg-surface-container transition-colors" type="button">
+                        Save Draft
+                    </button>
+<button class="px-8 py-3 rounded bg-primary text-white font-label-md hover:bg-primary-container shadow-md transition-all flex items-center space-x-2" type="submit">
+<span>Next Step</span>
+<span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</form>
+</div>
+<!-- Informational Cards (Bento Style) -->
+<div class="mt-stack-lg grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="bg-surface-container-low p-8 border border-[#E5EBE6] rounded-lg">
+<span class="material-symbols-outlined text-primary mb-4" data-icon="verified_user">verified_user</span>
+<h3 class="font-headline-md text-xl mb-3">Accredited Legacy</h3>
+<p class="font-body-md text-on-surface-variant">Gain access to the REEE quality seal for academic programs in Emotional Intelligence and Human Development.</p>
+</div>
+<div class="bg-surface-container-low p-8 border border-[#E5EBE6] rounded-lg">
+<span class="material-symbols-outlined text-primary mb-4" data-icon="hub">hub</span>
+<h3 class="font-headline-md text-xl mb-3">Network Synergy</h3>
+<p class="font-body-md text-on-surface-variant">Collaborate with over 200 European institutions on cross-border research and educational innovation.</p>
+</div>
+<div class="bg-surface-container-low p-8 border border-[#E5EBE6] rounded-lg">
+<span class="material-symbols-outlined text-primary mb-4" data-icon="auto_awesome">auto_awesome</span>
+<h3 class="font-headline-md text-xl mb-3">2026 Innovation</h3>
+<p class="font-body-md text-on-surface-variant">Participate in the upcoming Emotional Intelligence Global Summit as a founding institutional member.</p>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-[#E5EBE6] dark:bg-slate-900 border-t border-slate-200 mt-20">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-8 py-12 max-w-7xl mx-auto">
+<div class="mb-8 md:mb-0">
+<div class="font-headline-md text-lg font-bold text-[#1A2B42] mb-2">REEE</div>
+<p class="font-body-md text-sm text-slate-500 max-w-sm">© 2026 Red Europea de Educación Emocional (REEE). Committed to Emotional Education.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-body-md text-sm text-slate-500 hover:underline hover:text-[#1A2B42] transition-colors" href="membership.html">Contact</a>
+<a class="font-body-md text-sm text-slate-500 hover:underline hover:text-[#1A2B42] transition-colors" href="index.html">Privacy Policy</a>
+<a class="font-body-md text-sm text-slate-500 hover:underline hover:text-[#1A2B42] transition-colors" href="index.html">Legal Notice</a>
+<a class="font-body-md text-sm text-slate-500 hover:underline hover:text-[#1A2B42] transition-colors" href="index.html">Terms of Service</a>
+</div>
+</div>
+</footer>
+</body></html>
