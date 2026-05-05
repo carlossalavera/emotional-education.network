@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed-variant": "#5d4201",
+                    "surface-bright": "#faf9f7",
+                    "primary-fixed": "#d4e3ff",
+                    "on-tertiary-container": "#af8c47",
+                    "primary-container": "#1a2b42",
+                    "on-tertiary": "#ffffff",
+                    "secondary-fixed": "#cee9d6",
+                    "surface-container-high": "#e9e8e6",
+                    "secondary-container": "#cbe6d4",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-fixed": "#082014",
+                    "inverse-primary": "#b6c7e5",
+                    "on-primary-container": "#8292ae",
+                    "on-secondary": "#ffffff",
+                    "inverse-surface": "#2f3130",
+                    "secondary-fixed-dim": "#b2cdbb",
+                    "on-error": "#ffffff",
+                    "surface-tint": "#4f5f79",
+                    "tertiary-container": "#392700",
+                    "on-primary-fixed": "#0a1c32",
+                    "on-error-container": "#93000a",
+                    "on-secondary-container": "#506859",
+                    "surface-variant": "#e3e2e0",
+                    "tertiary-fixed": "#ffdea5",
+                    "on-surface": "#1a1c1b",
+                    "on-primary": "#ffffff",
+                    "outline": "#74777e",
+                    "primary": "#04162c",
+                    "surface-container": "#efeeec",
+                    "tertiary-fixed-dim": "#e9c176",
+                    "tertiary": "#1f1400",
+                    "surface-container-highest": "#e3e2e0",
+                    "inverse-on-surface": "#f1f1ef",
+                    "error-container": "#ffdad6",
+                    "surface-container-low": "#f4f3f1",
+                    "primary-fixed-dim": "#b6c7e5",
+                    "on-background": "#1a1c1b",
+                    "on-secondary-fixed-variant": "#344c3e",
+                    "outline-variant": "#c4c6cd",
+                    "surface-dim": "#dadad8",
+                    "error": "#ba1a1a",
+                    "background": "#faf9f7",
+                    "on-primary-fixed-variant": "#374860",
+                    "secondary": "#4c6455",
+                    "on-tertiary-fixed": "#261900",
+                    "surface": "#faf9f7",
+                    "on-surface-variant": "#44474d"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "stack-md": "24px",
+                    "margin-page": "64px",
+                    "gutter": "32px",
+                    "stack-lg": "48px",
+                    "unit": "8px",
+                    "container-max": "1280px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Newsreader"],
+                    "headline-lg": ["Newsreader"],
+                    "body-md": ["Manrope"],
+                    "body-lg": ["Manrope"],
+                    "label-md": ["Manrope"],
+                    "display-xl": ["Newsreader"]
+            },
+            "fontSize": {
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "400"}],
+                    "headline-lg": ["40px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "display-xl": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "500"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .serene-shadow {
+            box-shadow: 0 10px 40px -10px rgba(4, 22, 44, 0.06);
+        }
+        .bento-card:hover {
+            box-shadow: 0 20px 50px -12px rgba(4, 22, 44, 0.12);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<header class="sticky top-0 z-50 bg-white/90 dark:bg-slate-950/90 backdrop-blur-md border-b border-[#E5EBE6] dark:border-slate-800 shadow-sm shadow-[#1A2B42]/05">
+<nav class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<div class="font-serif text-2xl font-bold text-[#1A2B42] dark:text-slate-50">REEE</div>
+<div class="hidden md:flex items-center gap-8 font-serif font-medium tracking-tight">
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#1A2B42] transition-colors" href="index.html">Mission</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#1A2B42] transition-colors" href="activities.html">Activities</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#1A2B42] transition-colors" href="research.html">Resources</a>
+<a class="text-[#1A2B42] dark:text-white border-b-2 border-[#1A2B42] pb-1 font-semibold" href="membership.html">Membership</a>
+</div>
+<button class="bg-primary text-white px-6 py-2 rounded-lg font-label-md hover:bg-primary-container transition-all active:opacity-80">
+                Join Network
+            </button>
+</nav>
+</header>
+<main class="max-w-container-max mx-auto px-8">
+<!-- Hero Section -->
+<section class="py-stack-lg mt-16 text-center max-w-4xl mx-auto">
+<span class="inline-block px-4 py-1 rounded-full bg-secondary-container/30 text-on-secondary-container font-label-md mb-6">
+                Institutional Membership 2026
+            </span>
+<h1 class="font-display-xl text-display-xl text-primary leading-tight">
+    Participating Institutions
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+    Meet the universities, organisations, and educational institutions that are part of the European Emotional Education Network.
+</p>
+</section>
+<section class="max-w-7xl mx-auto px-8 pb-24">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <div class="bg-white border border-[#E5EBE6] rounded-xl p-8 text-center">
+            <img src="images/logo-unizar.png" class="h-20 mx-auto mb-6">
+            <h3 class="text-primary font-bold">University of Zaragoza</h3>
+            <p class="text-on-surface-variant">Spain</p>
+        </div>
+
+        <div class="bg-white border border-[#E5EBE6] rounded-xl p-8 text-center">
+            <img src="images/logo-lumsa.png" class="h-20 mx-auto mb-6">
+            <h3 class="text-primary font-bold">LUMSA University</h3>
+            <p class="text-on-surface-variant">Italy</p>
+        </div>
+
+        <div class="bg-white border border-[#E5EBE6] rounded-xl p-8 text-center">
+            <img src="images/logo-vilnius.png" class="h-20 mx-auto mb-6">
+            <h3 class="text-primary font-bold">Vilnius University</h3>
+            <p class="text-on-surface-variant">Lithuania</p>
+        </div>
+
+    </div>
+</section>
+
+</main>
+<!-- Footer -->
+<footer class="bg-[#E5EBE6] dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-8 py-12 max-w-7xl mx-auto font-sans text-sm tracking-wide">
+<div class="mb-8 md:mb-0">
+<div class="font-serif text-lg font-bold text-[#1A2B42] dark:text-slate-100 mb-2">REEE</div>
+<p class="text-[#1A2B42] dark:text-slate-300">© 2026 European Network of Emotional Education (REEE). Committed to Emotional Education.</p>
+</div>
+<div class="flex gap-8">
+<a class="text-slate-500 dark:text-slate-400 hover:underline hover:text-[#1A2B42] dark:hover:text-white transition-all duration-300" href="membership.html">Contact</a>
+<a class="text-slate-500 dark:text-slate-400 hover:underline hover:text-[#1A2B42] dark:hover:text-white transition-all duration-300" href="index.html">Privacy Policy</a>
+<a class="text-slate-500 dark:text-slate-400 hover:underline hover:text-[#1A2B42] dark:hover:text-white transition-all duration-300" href="index.html">Legal Notice</a>
+<a class="text-slate-500 dark:text-slate-400 hover:underline hover:text-[#1A2B42] dark:hover:text-white transition-all duration-300" href="index.html">Terms of Service</a>
+</div>
+</div>
+</footer>
+</body></html>
