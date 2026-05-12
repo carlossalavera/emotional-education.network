@@ -293,10 +293,28 @@
                 <span class="material-symbols-outlined text-4xl">language</span>
             </a>
 
-           <a href="join-network.html"
-   class="text-[#1A2B42] hover:opacity-70 transition-all">
-    <span class="material-symbols-outlined text-4xl">share</span>
-</a>
+     <button
+         onclick="
+    if (navigator.share) {
+        navigator.share({
+            title: 'European Emotional Education Network',
+            text: 'Discover the European Emotional Education Network',
+            url: 'https://emotionaleducationnetwork.com'
+        });
+    } else {
+        window.open(
+            'https://www.linkedin.com/sharing/share-offsite/?url=' + 
+            encodeURIComponent('https://emotionaleducationnetwork.com'),
+            '_blank'
+        );
+    }"
+    class="text-[#1A2B42] hover:opacity-70 transition-all">
+
+    <span class="material-symbols-outlined text-4xl">
+        share
+    </span>
+
+</button>
         </div>
 
     </div>
